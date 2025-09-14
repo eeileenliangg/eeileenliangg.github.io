@@ -1,0 +1,145 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+body {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 200px;
+  overflow-y: scroll;
+
+}
+
+.font_open_sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.introduction {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+.snoopy {
+  height: 300px;
+  padding: 10px;
+}
+
+.heading_bar {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.contacts {
+  display: flex;
+}
+
+.linkedin {
+  height: 45px;
+  width: 45px;
+  background-image: url("pictures/in_regular.png");
+  background-size: contain;
+}
+
+.linkedin:hover {
+  background-image: url("pictures/in_hover.png");
+}
+
+.email_to {
+  height: 45px;
+  width: 60px;
+  background-image: url("pictures/email_regular.png");
+  background-size: contain;
+}
+
+.email_to:hover {
+  background-image: url("pictures/email_hover.png");
+}
+
+.folders {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.folder {
+  height: 228.75px;
+  width: 300px;
+  margin-top: 50px;
+  filter: drop-shadow(5px 5px 5px #999898);
+}
+
+.braille {
+  background-image: url("pictures/braille_translator_folder.png");
+  background-size: contain;
+  transform: rotate(-5deg);
+
+}
+
+.braille:hover {
+  transform: rotate(0deg);
+}
+
+.ai_slang {
+  background-image: url("pictures/ai_slang_folder.png");
+  background-size: contain;
+  transform: rotate(5deg);
+}
+
+.ai_slang:hover {
+  transform: rotate(0deg);
+}
+
+.classmate_app {
+  background-image: url("pictures/classmate_app_folder.png");
+  background-size: contain;
+  transform: rotate(-5deg);
+}
+
+.classmate_app:hover {
+  transform: rotate(0deg);
+}
+
+.poker_game {
+  background-image: url("pictures/poker_game_folder.png");
+  background-size: contain;
+  transform: rotate(5deg);
+}
+
+.poker_game:hover {
+  transform: rotate(0deg);
+}
+
+.studybearai {
+  background-image: url("pictures/study_bear_folder.png");
+  background-size: contain;
+  transform: rotate(-5deg);
+}
+
+.studybearai:hover {
+  transform: rotate(0deg);
+}
+
+.movie_app {
+  background-image: url("pictures/movie_app_folder.png");
+  background-size: contain;
+  transform: rotate(5deg);
+}
+
+.movie_app:hover {
+  transform: rotate(0deg);
+}
