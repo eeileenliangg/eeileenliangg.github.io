@@ -3,34 +3,83 @@ html {
 }
 
 section {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 70%;
   scroll-snap-align: start;
-}
-
-body {
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 200px;
-  overflow-y: scroll;
-
+  padding-left: 15%;
+  padding-right: 15%;
+  max-width: 100%;
+  /* overflow-y: scroll; */
 }
 
 .font_open_sans {
   font-family: 'Open Sans', sans-serif;
 }
 
+p {
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
 .introduction {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   font-size: 30px;
-  margin-top: 25px;
-  margin-bottom: 75px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#skills {
+  max-width: 5000px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+#skills::-webkit-scrollbar {
+  display: none;
+}
+
+.photobanner {
+  padding-left: 100%;
+  gap: 15px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: bannermove 30s linear infinite;
+}
+
+.photobanner img {
+  margin: 0 0.5em
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+#skills:hover {
+  overflow: auto;
+}
+
+#skills:hover .photobanner {
+  animation-play-state: paused;
 }
 
 .snoopy {
   height: 300px;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .heading_bar {
@@ -74,6 +123,7 @@ body {
   justify-content: space-around;
   margin-left: 50px;
   margin-right: 50px;
+  column-gap: 0px;
 }
 
 .folder {
